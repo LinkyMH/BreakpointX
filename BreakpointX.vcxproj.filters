@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{a569b559-a04b-448e-8ca1-d6fa559479cd}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{fbdddb32-b73a-4d1e-becf-c975da234d27}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{cce71611-88d7-4aeb-83d6-d2f8711b6d54}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="Information">
+      <UniqueIdentifier>{11c8dae9-8cea-44a0-af83-72d0f8374625}</UniqueIdentifier>
+      <Extensions>txt</Extensions>
+    </Filter>
+    <Filter Include="MMF Headers">
+      <UniqueIdentifier>{43dd36be-3a3d-4c9e-8a8d-1a7d10319d0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BreakpointXAPIs">
+      <UniqueIdentifier>{b44c9a6e-02c7-4bd8-921b-64fda24f658c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BreakpointXAPIs\Inspector"><UniqueIdentifier>{040fdf80-27de-4c10-b1b7-29fac4f5fd1a}</UniqueIdentifier></Filter>
+    <Filter Include="BreakpointXAPIs\Utilities"><UniqueIdentifier>{dd85604f-9169-4982-8f82-8133fbdfa65a}</UniqueIdentifier></Filter>
+    <Filter Include="BreakpointXAPIs\Runtime"><UniqueIdentifier>{6c6de4f7-b564-4524-a618-ea9258e278e7}</UniqueIdentifier></Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Edittime.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="General.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BreakpointXAPIs\BreakpointAPI.cpp">
+      <Filter>BreakpointXAPIs</Filter>
+    </ClCompile>
+    <ClCompile Include="BreakpointXAPIs\Inspector\Inspector.cpp"><Filter>BreakpointXAPIs\Inspector</Filter></ClCompile>
+    <ClCompile Include="BreakpointXAPIs\Runtime\EventTrace.cpp">
+      <Filter>BreakpointXAPIs\Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="BreakpointXAPIs\Inspector\InspectorPreferences.cpp">
+      <Filter>BreakpointXAPIs\Inspector</Filter>
+    </ClCompile>
+    <ClCompile Include="BreakpointXAPIs\Runtime\RuntimeMode.cpp">
+      <Filter>BreakpointXAPIs\Runtime</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ext.def">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Ext.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Program Files\Microsoft Visual Studio\Vc98\Include\Basetsd.h">
+      <Filter>MMF Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Inc\Ccx.h">
+      <Filter>MMF Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Inc\Ccxhdr.h">
+      <Filter>MMF Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Inc\CfcError.h">
+      <Filter>MMF Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Inc\CfcFile.h">
+      <Filter>MMF Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Inc\Cncf.h">
+      <Filter>MMF Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Inc\cncr.h">
+      <Filter>MMF Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Inc\Cncy.h">
+      <Filter>MMF Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Inc\Cnpdll.h">
+      <Filter>MMF Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Inc\colors.h">
+      <Filter>MMF Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Inc\EVTCCX.H">
+      <Filter>MMF Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Inc\Fill.h">
+      <Filter>MMF Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Inc\FilterMgr.h">
+      <Filter>MMF Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Inc\ImageFlt.h">
+      <Filter>MMF Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Inc\ImgFlt.h">
+      <Filter>MMF Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Inc\Palet.h">
+      <Filter>MMF Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Inc\PictEdDefs.h">
+      <Filter>MMF Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Inc\Props.h">
+      <Filter>MMF Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Inc\PTYPE.H">
+      <Filter>MMF Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Inc\SoundFilter.h">
+      <Filter>MMF Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Inc\SoundFilterMgr.h">
+      <Filter>MMF Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Inc\Surface.h">
+      <Filter>MMF Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Inc\TigsExt.hpp">
+      <Filter>MMF Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Inc\WinMacro.h">
+      <Filter>MMF Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="BreakpointXAPIs\BreakpointConstants.hpp"><Filter>BreakpointXAPIs</Filter></ClInclude>
+    <ClInclude Include="BreakpointXAPIs\Inspector\InspectorConstants.hpp"><Filter>BreakpointXAPIs\Inspector</Filter></ClInclude>
+    <ClInclude Include="BreakpointXAPIs\BreakpointAPI.hpp">
+      <Filter>BreakpointXAPIs</Filter>
+    </ClInclude>
+    <ClInclude Include="BreakpointXAPIs\Inspector\Inspector.hpp"><Filter>BreakpointXAPIs\Inspector</Filter></ClInclude>
+    <ClInclude Include="BreakpointXAPIs\Utilities\ScopeExit.hpp"><Filter>BreakpointXAPIs\Utilities</Filter></ClInclude>
+    <ClInclude Include="BreakpointXAPIs\Runtime\EventTrace.hpp">
+      <Filter>BreakpointXAPIs\Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="BreakpointXAPIs\Inspector\InspectorPreferences.hpp">
+      <Filter>BreakpointXAPIs\Inspector</Filter>
+    </ClInclude>
+    <ClInclude Include="BreakpointXAPIs\Runtime\RuntimeMode.hpp">
+      <Filter>BreakpointXAPIs\Runtime</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="RES\EXTICON.BMP">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\EXTIMG.BMP">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\Help\ExtSdk.chm">
+      <Filter>Information</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

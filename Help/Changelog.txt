@@ -1,0 +1,2 @@
+- BreakpointX v1.0.0 (1) - 10/08/2026:
+* First Stable Version!

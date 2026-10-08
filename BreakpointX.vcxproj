@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug Unicode|Win32">
+      <Configuration>Debug Unicode</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release Unicode|Win32">
+      <Configuration>Release Unicode</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Run_Only Unicode|Win32">
+      <Configuration>Run_Only Unicode</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>18.0</VCProjectVersion>
+    <ProjectGuid>{3BCB4C73-71F6-43B6-803D-41411F92652A}</ProjectGuid>
+    <RootNamespace>BreakpointX</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Run_Only Unicode|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v145</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Unicode|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v145</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Unicode|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v145</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Run_Only Unicode|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release Unicode|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug Unicode|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>18.0.12022.297</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Unicode|Win32'">
+    <OutDir>.\Obj\Unicode\Debug\</OutDir>
+    <IntDir>.\Obj\Unicode\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <GenerateManifest>false</GenerateManifest>
+    <TargetExt>.mfx</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Unicode|Win32'">
+    <OutDir>.\Obj\Unicode\Release\</OutDir>
+    <IntDir>.\Obj\Unicode\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <GenerateManifest>false</GenerateManifest>
+    <TargetExt>.mfx</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Run_Only Unicode|Win32'">
+    <OutDir>.\Obj\Unicode\Run_Only\</OutDir>
+    <IntDir>.\Obj\Unicode\Run_Only\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <GenerateManifest>false</GenerateManifest>
+    <TargetExt>.mfx</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug Unicode|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Debug/BreakpointX.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\Inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;WIN32;_WINDOWS;STRICT;UNICODE;_UNICODE;HWABETA;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeaderOutputFile>$(IntDir)BreakpointX.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;EDITOR;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>..\..\Inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ResourceOutputFileName>$(IntDir)Ext.res</ResourceOutputFileName>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;comdlg32.lib;advapi32.lib;shell32.lib;uuid.lib;..\..\lib\mmfs2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>C:\Program Files (x86)\Steam\steamapps\common\Clickteam Fusion 2.5\Extensions\Unicode\BreakpointX$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ModuleDefinitionFile>.\Ext.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(IntDir)BreakpointX.pdb</ProgramDatabaseFile>
+      <ImportLibrary>$(IntDir)BreakpointX.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug/BreakpointX.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release Unicode|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Release/BreakpointX.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>..\..\Inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;WIN32;_WINDOWS;STRICT;UNICODE;_UNICODE;HWABETA;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeaderOutputFile>$(IntDir)BreakpointX.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;EDITOR;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>..\..\Inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ResourceOutputFileName>$(IntDir)Ext.res</ResourceOutputFileName>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;comdlg32.lib;advapi32.lib;shell32.lib;uuid.lib;..\..\lib\mmfs2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)BreakpointX$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ModuleDefinitionFile>.\Ext.def</ModuleDefinitionFile>
+      <ProgramDatabaseFile>$(IntDir)BreakpointX.pdb</ProgramDatabaseFile>
+      <ImportLibrary>$(IntDir)BreakpointX.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release/BreakpointX.bsc</OutputFile>
+    </Bscmake>
+    <PostBuildEvent>
+      <Message>Copy file to installer directory</Message>
+      <Command>copy /Y "$(TargetPath)" ".\ToInstall\Files\Extensions\Unicode\"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Run_Only Unicode|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;RUN_ONLY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Run_Only/BreakpointX.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>..\..\Inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;WIN32;_WINDOWS;STRICT;UNICODE;_UNICODE;RUN_ONLY;HWABETA;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeaderOutputFile>$(IntDir)BreakpointX.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;RUN_ONLY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>..\..\Inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ResourceOutputFileName>$(IntDir)Ext.res</ResourceOutputFileName>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;comdlg32.lib;advapi32.lib;shell32.lib;uuid.lib;..\..\lib\mmfs2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)BreakpointX$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ModuleDefinitionFile>.\Ext.def</ModuleDefinitionFile>
+      <ProgramDatabaseFile>$(IntDir)BreakpointX.pdb</ProgramDatabaseFile>
+      <ImportLibrary>$(IntDir)BreakpointX.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Run_Only/BreakpointX.bsc</OutputFile>
+    </Bscmake>
+    <PostBuildEvent>
+      <Message>Copy extension to installer directory</Message>
+      <Command>copy /Y "$(TargetPath)" ".\ToInstall\Files\Data\Runtime\Unicode\"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="BreakpointXAPIs\BreakpointAPI.cpp" />
+    <ClCompile Include="BreakpointXAPIs\Inspector\Inspector.cpp" />
+    <ClCompile Include="BreakpointXAPIs\Runtime\EventTrace.cpp" />
+    <ClCompile Include="BreakpointXAPIs\Runtime\RuntimeMode.cpp" />
+    <ClCompile Include="BreakpointXAPIs\Inspector\InspectorPreferences.cpp" />
+    <ClCompile Include="Edittime.cpp" />
+    <ClCompile Include="General.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Runtime.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\Help\ExtSdk.chm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug Unicode|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release Unicode|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Run_Only Unicode|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <None Include="Ext.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Ext.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Program Files\Microsoft Visual Studio\Vc98\Include\Basetsd.h" />
+    <ClInclude Include="..\..\Inc\Ccx.h" />
+    <ClInclude Include="..\..\Inc\Ccxhdr.h" />
+    <ClInclude Include="..\..\Inc\CfcError.h" />
+    <ClInclude Include="..\..\Inc\CfcFile.h" />
+    <ClInclude Include="..\..\Inc\Cncf.h" />
+    <ClInclude Include="..\..\Inc\cncr.h" />
+    <ClInclude Include="..\..\Inc\Cncy.h" />
+    <ClInclude Include="..\..\Inc\Cnpdll.h" />
+    <ClInclude Include="..\..\Inc\colors.h" />
+    <ClInclude Include="..\..\Inc\EVTCCX.H" />
+    <ClInclude Include="..\..\Inc\Fill.h" />
+    <ClInclude Include="..\..\Inc\FilterMgr.h" />
+    <ClInclude Include="..\..\Inc\ImageFlt.h" />
+    <ClInclude Include="..\..\Inc\ImgFlt.h" />
+    <ClInclude Include="..\..\Inc\Palet.h" />
+    <ClInclude Include="..\..\Inc\PictEdDefs.h" />
+    <ClInclude Include="..\..\Inc\Props.h" />
+    <ClInclude Include="..\..\Inc\PTYPE.H" />
+    <ClInclude Include="..\..\Inc\SoundFilter.h" />
+    <ClInclude Include="..\..\Inc\SoundFilterMgr.h" />
+    <ClInclude Include="..\..\Inc\Surface.h" />
+    <ClInclude Include="..\..\Inc\TigsExt.hpp" />
+    <ClInclude Include="..\..\Inc\WinMacro.h" />
+    <ClInclude Include="BreakpointXAPIs\BreakpointAPI.hpp" />
+    <ClInclude Include="BreakpointXAPIs\Inspector\Inspector.hpp" />
+    <ClInclude Include="BreakpointXAPIs\Utilities\ScopeExit.hpp" />
+    <ClInclude Include="BreakpointXAPIs\BreakpointConstants.hpp" />
+    <ClInclude Include="BreakpointXAPIs\Inspector\InspectorConstants.hpp" />
+    <ClInclude Include="BreakpointXAPIs\Runtime\EventTrace.hpp" />
+    <ClInclude Include="BreakpointXAPIs\Runtime\RuntimeMode.hpp" />
+    <ClInclude Include="BreakpointXAPIs\Inspector\InspectorPreferences.hpp" />
+    <ClInclude Include="Common.h" />
+    <ClInclude Include="Main.h" />
+    <ClInclude Include="Resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="RES\EXTICON.BMP" />
+    <Image Include="RES\EXTIMG.BMP" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,30 @@
+// 
+
+* Repeat while "T" is pressed
+	Special : Start loop "CompareIfAGreaterThanB" 1 times
+
+* Start of Frame
+	 BRPX_NumComparitor : Break Here!
+	Special : Start loop "RandomLoop" 10 times
+	 BRPX_NumComparitor : Break Here!
+
+// 
+
+* On loop "RandomLoop"
+	 BRPX_NumComparitor : Break Here!
+
+* On loop "CompareIfAGreaterThanB"
++ BRPX_NumComparitor: Break Here!
++ Pick one of Active 2
++ BRPX_NumComparitor: Break Here!
++ Y position of Active > Y Bottom Frame
++ A > B
+	 BRPX_NumComparitor : Break Here!
+	Active 2 : Destroy
+	 BRPX_NumComparitor : Break Here!
+
+// 
+
+* BRPX_NumComparitor: On Breakpoint
+	 Special : Send "Breakpoint at Event: #" + Str$(BRPX_BreakEvent( "BRPX_NumComparitor" )) to output window
+

@@ -1,0 +1,13 @@
+Uninstaller	32,921	61%
+Data\Runtime\Unicode\BreakpointX.mfx	275,139	62%
+Examples\BreakpointX\BreakpointX_Sandbox.mfa	53,068	19%
+Extensions\Unicode\BreakpointX.mfx	276,920	62%
+Help\Changelog.txt	72	-14%
+Help\LICENSE.txt	650	41%
+Help\README.txt	791	49%
+
+Result :
+    Number of files: 7
+    Total uncompressed size: 1592982 bytes
+    Total compressed size: 639561 bytes
+    Install program size: 789737 bytes

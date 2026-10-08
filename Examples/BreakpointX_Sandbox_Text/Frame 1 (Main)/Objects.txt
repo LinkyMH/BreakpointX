@@ -1,0 +1,19 @@
++ Object Definitions
+	+ BRPX_NumComparitor
+		- Type: BreakpointX
+	+ Active
+		- Type: Active
+		- Images hash: 0xEDDA
+	+ Active 2
+		- Type: Active
+		- Images hash: 0xEDDA
++ Layer #1 (Main)
+	- BRPX_NumComparitor [0, -32]
+	- Active [144, 488]
+	- Active [279, 463]
+	- Active [407, 503]
+	- Active [247, 583]
+	- Active [439, 399]
+	- Active 2 [503, 487]
+	- Active 2 [455, 583]
+	- Active 2 [351, 583]

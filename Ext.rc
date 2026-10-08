@@ -1,0 +1,411 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "ccx.h"
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(65001)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+1 VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK 0x0L
+#ifdef _DEBUG
+ FILEFLAGS 0x21L
+#else
+ FILEFLAGS 0x20L
+#endif
+ FILEOS 0x10001L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+	BLOCK "StringFileInfo"
+	BEGIN
+		BLOCK "040904e4"
+		BEGIN
+			VALUE "Comments",			"Powerful Breakpoints. Step-through, inspect Object-filter, Break Events, and more. (v1.0.0 (1))"
+			VALUE "CompanyName",		"Mustafa Hamad"
+			VALUE "FileDescription",	"BreakpointX"
+			VALUE "FileVersion",		"1.0.0.0"
+			VALUE "InternalName",		"BreakpointX"
+			VALUE "LegalCopyright",		"Copyright © 2026 Mustafa Hamad"
+			VALUE "OriginalFilename",	"BreakpointX.mfx"
+			VALUE "ProductName",		"BreakpointX"
+			VALUE "ProductVersion",		"1.0.0.0"
+			VALUE "SpecialBuild",		"00000001"
+		END
+	END
+	BLOCK "VarFileInfo"
+	BEGIN
+		VALUE "Translation", 0x409, 1252
+	END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RCDATA
+//
+
+KPX_MAGICNUMBER RCDATA 
+BEGIN
+	0x2516, 0x5908
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+#if defined(APSTUDIO_INVOKED) || defined(EDITOR)
+#if defined(APSTUDIO_INVOKED)
+EXO_ICON$(EDITOR)       BITMAP                  "RES\\EXTICON.BMP"
+
+#else
+EXO_ICON                BITMAP                  "RES\\EXTICON.BMP"
+
+#endif
+#endif
+#if defined(APSTUDIO_INVOKED) || defined(EDITOR)
+#if defined(APSTUDIO_INVOKED)
+EXO_IMAGE$(EDITOR)      BITMAP                  "RES\\EXTIMG.BMP"
+
+#else
+EXO_IMAGE               BITMAP                  "RES\\EXTIMG.BMP"
+
+#endif
+#endif
+
+IDB_INSPECTOR_ICON      BITMAP                  "RES\\EXTICON.BMP"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+#if defined(APSTUDIO_INVOKED) || defined(EDITOR)
+#if defined(APSTUDIO_INVOKED)
+MN_CONDITIONS$(EDITOR) MENU
+#else
+MN_CONDITIONS MENU
+#endif
+BEGIN
+	POPUP ""
+	BEGIN
+		// GENERAL
+		MENUITEM SEPARATOR
+		MENUITEM "Break Here!",									IDMN_CND_BREAKHERE
+		MENUITEM SEPARATOR
+		MENUITEM "On Breakpoint",								IDMN_CND_ONBREAK
+		MENUITEM SEPARATOR
+	END
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(EDITOR)
+#if defined(APSTUDIO_INVOKED)
+MN_ACTIONS$(EDITOR) MENU
+#else
+MN_ACTIONS MENU
+#endif
+BEGIN
+	POPUP ""
+	BEGIN
+		// GENERAL
+		MENUITEM SEPARATOR
+		MENUITEM "Break Here!",									IDMN_ACT_BREAKHERE
+		// GENERAL > BREAKPOINTS STATE
+		POPUP "Breakpoints State"
+		BEGIN
+			MENUITEM SEPARATOR
+			MENUITEM "Enable Breakpoints",						IDMN_ACT_ENABLEBREAKPOINTS
+			MENUITEM "Disable Breakpoints",						IDMN_ACT_DISABLEBREAKPOINTS
+			MENUITEM "Toggle Breakpoints"						IDMN_ACT_TOGGLEBREAKPOINTS
+			MENUITEM SEPARATOR
+			MENUITEM "Set Breakpoints State (Enable/Disable)",	IDMN_ACT_SETBREAKPOINTSSTATE
+		END
+		MENUITEM SEPARATOR
+	END
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(EDITOR)
+#if defined(APSTUDIO_INVOKED)
+MN_EXPRESSIONS$(EDITOR) MENU
+#else
+MN_EXPRESSIONS MENU
+#endif
+BEGIN
+	POPUP ""
+	BEGIN
+		// GENERAL
+		MENUITEM SEPARATOR
+		MENUITEM "Get Last Break Event Number", 				IDMN_EXP_GETLASTBREAKEVENT
+		MENUITEM SEPARATOR
+	END
+END
+#endif
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+#if defined(APSTUDIO_INVOKED) || defined(EDITOR)
+#if defined(APSTUDIO_INVOKED)
+DB_SETUP$(EDITOR) DIALOGEX 0, 4, 200, 172
+#else
+DB_SETUP DIALOGEX 0, 4, 200, 172
+#endif
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "Setup BreakpointX"
+FONT 8, "Helv", 0, 0, 0x0
+BEGIN
+	PUSHBUTTON		"Cancel",IDCANCEL,75,150,50,14
+	DEFPUSHBUTTON	"OK",IDOK,5,150,50,14
+	PUSHBUTTON		"Help",ID_HELP,145,150,50,14,WS_DISABLED
+	GROUPBOX		"",-1,5,6,190,135
+	CTEXT			"Powerful Breakpoints. Step-through, inspect Object-filter, Break Events, and more.",-1,28,48,142,15,0,WS_EX_TRANSPARENT
+	CONTROL			EXO_IMAGE,-1,"Static",SS_BITMAP | SS_REALSIZEIMAGE,89,18,21,20
+	CONTROL			"Made by Linky",-1,"Static",SS_SIMPLE | WS_GROUP,76,126,47,8,WS_EX_TRANSPARENT
+	CONTROL			"v1.0.0 (1)",-1,"Static",SS_SIMPLE | WS_GROUP,156,6,31,8
+	LTEXT			"Free for Commericial Use!",-1,12,6,60,18
+	CTEXT			"Check Examples!",-1,150,132,42,18
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED)
+DB_INSPECTOR$(EDITOR) DIALOGEX 0, 0, 480, 300
+#else
+DB_INSPECTOR DIALOGEX 0, 0, 480, 300
+#endif
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME | WS_MAXIMIZEBOX | WS_CLIPCHILDREN
+CAPTION "BreakpointX Inspector"
+FONT 9, "Segoe UI", 0, 0, 0x1
+BEGIN
+	CONTROL			"",IDC_INSPECTOR_TABS,"SysTabControl32",WS_TABSTOP | WS_CLIPSIBLINGS,7,7,466,286
+END
+
+DB_INSPECTOR_PAGE DIALOGEX 0, 0, 450, 260
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD | WS_VISIBLE | WS_CLIPSIBLINGS
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 9, "Segoe UI", 0, 0, 0x1
+BEGIN
+	DEFPUSHBUTTON	"▶️ Continue",IDOK,7,7,64,16
+	PUSHBUTTON		"⏭ Next Breakpoint",IDC_INSPECTOR_NEXT,75,7,86,16
+	PUSHBUTTON		"🛑 Disable Breakpoints",IDC_INSPECTOR_DISABLE,165,7,102,16
+	PUSHBUTTON		"❌ Cancel",IDCANCEL,271,7,50,16
+	CONTROL			"",IDC_INSPECTOR_SHOW_CONTROLS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,27,320,12
+	CONTROL			"",IDC_INSPECTOR_TYPES,"SysListView32",WS_TABSTOP | WS_BORDER | 0x400D,7,45,140,192
+	CONTROL			"",IDC_INSPECTOR_SPLITTER,"Static",WS_TABSTOP | SS_NOTIFY | SS_ETCHEDVERT,147,45,5,192
+	CONTROL			"",IDC_INSPECTOR_OBJECTS,"SysListView32",WS_TABSTOP | WS_BORDER | 0x900D,152,45,291,192
+	LTEXT			"",IDC_INSPECTOR_SUMMARY,7,241,436,12
+	CONTROL			"",IDC_INSPECTOR_TRACE,"SysListView32",WS_TABSTOP | WS_BORDER | 0x900D,7,45,436,192
+	LTEXT			"",IDC_INSPECTOR_TRACE_SUMMARY,7,241,436,12
+END
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+	"resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+	"#include ""ccx.h""\r\n"
+	"#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+	"#include ""windows.h""\r\n"
+	"#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+	"\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+	"\r\n"
+	"\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+	"DB_SETUP$(EDITOR)", DIALOG
+	BEGIN
+		VERTGUIDE, 100
+		HORZGUIDE, 73
+	END
+
+	"DB_INSPECTOR$(EDITOR)", DIALOG
+	BEGIN
+		VERTGUIDE, 90
+		HORZGUIDE, 37
+	END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+// HEADER
+STRINGTABLE
+BEGIN
+	KPX_MARK								"MF2"
+	KPX_NAME								"BreakpointX"
+END
+
+// ABOUT
+STRINGTABLE
+BEGIN
+	IDST_OBJNAME							"BreakpointX"
+	IDST_AUTHOR								"Mustafa Hamad (Linky)"
+	IDST_COPYRIGHT							"Copyright © 2026 Mustafa Hamad"
+	IDST_COMMENT							"Powerful Breakpoints. Step-through, inspect Object-filter, Break Events, and more. (v1.0.0 (1))"
+	IDST_HTTP								"https://github.com/LinkyMH"
+END
+
+// ACTIONS
+STRINGTABLE
+BEGIN
+	// EVENT EDITOR TEXT
+	M_ACT_BREAKHERE							"Break Here!"
+	M_ACT_ENABLEBREAKPOINTS					"Enable Breakpoints"
+	M_ACT_DISABLEBREAKPOINTS				"Disable Breakpoints"
+	M_ACT_TOGGLEBREAKPOINTS					"Toggle Breakpoints"
+	M_ACT_SETBREAKPOINTSSTATE				"Set Breakpoints State to: %0"
+	// PARAMETER TITLE
+	M_ACT_SETBREAKPOINTSSTATE_P0			"Enable or Disable Breakpoints? (0:Disables, otherwise:Enabled)"
+END
+
+// CONDITIONS
+STRINGTABLE
+BEGIN
+	// EVENT EDITOR TEXT
+	M_CND_BREAKHERE							"%o: Break Here!"
+	M_CND_ONBREAK							"%o: On Breakpoint"
+	
+	// PARAMETER TITLE
+	// NO PARAMETERS
+END
+
+// EXPRESSIONS
+STRINGTABLE
+BEGIN
+	// EVENT EDITOR TEXT
+	M_EXP_GETLASTBREAKEVENT					"BRPX_BreakEvent("
+	
+	// PARAMETER TITLE
+	// NO PARAMETERS
+END
+
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
+STRINGTABLE
+BEGIN
+	IDS_INSPECTOR_SHOW_CONTROLS_SHORT		"Other Tabs"
+	IDS_INSPECTOR_SHOW_CONTROLS				"Show Breakpoint Controls in Other Tabs"
+	IDS_INSPECTOR_TIP_SHOW_CONTROLS			"Show Continue, Next Breakpoint, Disable, and Cancel in Object Selection and Events Trace. Keyboard shortcuts work with controls hidden."
+	IDS_INSPECTOR_DETACH					"Open in Separate Window"
+	IDS_INSPECTOR_REATTACH					"Return to Main Window"
+	IDS_INSPECTOR_TITLE						"BreakpointX Inspector"
+	IDS_INSPECTOR_EVENT						"Event #%ld - BreakpointX Inspector"
+	IDS_INSPECTOR_EVENT_UNKNOWN				"Event Unavailable - BreakpointX Inspector"
+	IDS_INSPECTOR_OBJECT_NAME				"Object #%d"
+	IDS_INSPECTOR_SIMPLIFIED				"Simplified"
+	IDS_INSPECTOR_SELECTION					"Object Selection"
+	IDS_INSPECTOR_TYPE						"Type"
+	IDS_INSPECTOR_FIXED						"Fixed Value"
+	IDS_INSPECTOR_X							"X"
+	IDS_INSPECTOR_Y							"Y"
+	IDS_INSPECTOR_STATUS					"Status"
+	IDS_INSPECTOR_TYPE_COUNT				"%s (%zu / %d)"
+	IDS_INSPECTOR_NO_TYPES					"No Types to Show!"
+	IDS_INSPECTOR_NO_OBJECTS				"No Picked Objects to Show!"
+	IDS_INSPECTOR_NO_CHECKS					"Check a Type to Show Its Objects."
+	IDS_INSPECTOR_REMOVED					"Removed"
+	IDS_INSPECTOR_PICKED					"Picked"
+	IDS_INSPECTOR_SUMMARY					"Showing %zu of %zu Picked Objects"
+	IDS_INSPECTOR_TIP_CONTINUE				"Continue (F5): Finish this Fusion cycle without more pauses. Enabled hits are still traced. Pause again at the first breakpoint in a later cycle."
+	IDS_INSPECTOR_TIP_NEXT					"Next Breakpoint (F6): Carry on and stop at the next breakpoint, even if breakpoints are disabled."
+	IDS_INSPECTOR_TIP_DISABLE				"Disable Breakpoints (F7): Carry on without stopping at breakpoints until you turn them back on."
+	IDS_INSPECTOR_TIP_CANCEL				"Cancel (Esc): Close all Inspector windows and carry on."
+	IDS_INSPECTOR_TIP_TABS					"F8: Switch tabs in this window. Right-click a tab, or press Shift+F10, to open it in a separate window or return it."
+	IDS_INSPECTOR_TIP_TYPES					"Objects picked by this event, before On Breakpoint runs. Other types are not listed. Counts are picked / total. Use Space to show or hide a type in this table."
+	IDS_INSPECTOR_TIP_OBJECTS				"Drag a column edge to resize it. Removed means the object was marked to destroy when the breakpoint was reached."
+	IDS_INSPECTOR_TIP_EVENT					"The event that reached this breakpoint."
+	IDS_INSPECTOR_ERROR						"Couldn't open the BreakpointX Inspector. Windows error: %lu."
+	IDS_INSPECTOR_TYPES						"Object Types to Show"
+	IDS_INSPECTOR_OBJECTS					"Picked Objects"
+	IDS_INSPECTOR_CONTINUE					"▶️ Continue"
+	IDS_INSPECTOR_NEXT						"⏭ Next Breakpoint"
+	IDS_INSPECTOR_DISABLE					"🛑 Disable Breakpoints"
+	IDS_INSPECTOR_CANCEL					"❌ Cancel"
+	IDS_INSPECTOR_SYMBOL_CONTINUE			"▶️"
+	IDS_INSPECTOR_SYMBOL_NEXT				"⏭"
+	IDS_INSPECTOR_SYMBOL_DISABLE			"🛑"
+	IDS_INSPECTOR_SYMBOL_CANCEL				"❌"
+	IDS_INSPECTOR_SPLITTER					"Object Type pane width"
+	IDS_INSPECTOR_TIP_SPLITTER				"Drag to resize the type list, or drag fully left to hide it. Use Left/Right arrows (Shift for smaller steps), Home to hide, End to widen. ESC cancels a drag."
+	IDS_INSPECTOR_TRACE						"Events Trace"
+	IDS_TRACE_EVENT							"Event Number"
+	IDS_TRACE_HITS							"Hits"
+	IDS_TRACE_CYCLE_HITS					"Hits per Cycle"
+	IDS_TRACE_CYCLE							"Cycle %lu"
+	IDS_TRACE_IN_PROGRESS					" (In Progress!)"
+	IDS_TRACE_PARTIAL						" (Earlier Rows Discarded!)"
+	IDS_TRACE_UNAVAILABLE					"Unavailable"
+	IDS_TRACE_SUMMARY						"Note: Hit Counts are recorded at each point in execution!."
+	IDS_TRACE_TRUNCATED						"%zu rows. %llu discarded. Totals include earlier hits aswell."
+	IDS_TRACE_TIP							"Hits: Total breakpoint calls for this event since this frame started. Hits per Cycle: Calls in this Fusion loop up to this row. Only consecutive repeats are combined. Fastloops share the enclosing cycle. Disabled breakpoints are not recorded!"
+END
